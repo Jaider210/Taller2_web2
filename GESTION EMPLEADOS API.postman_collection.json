@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "bc1c9067-4520-4bc3-9e05-75bf3d58a789",
+		"name": "GESTION EMPLEADOS API",
+		"description": "API para gestion de empleados (agregar, editar y eliminar empleados).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "666013"
+	},
+	"item": [
+		{
+			"name": "Traer Todos los Empleados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer Empleado por Codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees/E2964",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"E2964"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Nuevo Empleado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_empleado\": \"E1695\",\r\n    \"name\": \"Luis Miguel Torres\",\r\n    \"Departamento\": \"Desarrollo\",\r\n    \"Posicion\": \"Desarrollador Backend\",\r\n    \"Salario\": 3500000,\r\n    \"Fecha_Ingreso\": \"2024-10-01\",\r\n    \"Activo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Empleado por Codigo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"codigo_empleado\": \"E1695\",\r\n    \"name\": \"Luis Miguel Torres\",\r\n    \"Departamento\": \"Desarrollo\",\r\n    \"Posicion\": \"Desarrollador Backend\",\r\n    \"Salario\": 4800000,\r\n    \"Fecha_Ingreso\": \"2024-08-12\",\r\n    \"Activo\": false\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees/E1695",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"E1695"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empleado por Codigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees/E1066",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"E1066"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

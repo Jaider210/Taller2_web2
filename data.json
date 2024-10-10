@@ -1,0 +1,31 @@
+[
+  {
+    "codigo_empleado": "E2964",
+    "name": "Jhaider Ramirez",
+    "Departamento": "Desarrollo",
+    "Posicion": "Desarrollador Full Stack",
+    "Salario": 3800000,
+    "Fecha_Ingreso": "2024-08-12",
+    "Activo": false
+  },
+  {
+    "id": 3,
+    "codigo_empleado": "E1928",
+    "name": "Jefferson Escobar",
+    "Departamento": "QA",
+    "Posicion": "QA",
+    "Salario": 2500000,
+    "Fecha_Ingreso": "2024-10-01",
+    "Activo": true
+  },
+  {
+    "id": 4,
+    "codigo_empleado": "E1695",
+    "name": "Luis Miguel Torres",
+    "Departamento": "Desarrollo",
+    "Posicion": "Desarrollador Backend",
+    "Salario": 4800000,
+    "Fecha_Ingreso": "2024-08-12",
+    "Activo": false
+  }
+]
